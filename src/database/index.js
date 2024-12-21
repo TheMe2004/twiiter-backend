@@ -2,7 +2,7 @@ const { Sequelize } = require('sequelize');
 const config = require('../config');
 
 const sequelize = new Sequelize(config.databaseurl);
-
+   
 
 sequelize.authenticate()
   .then(() => console.log('Database connection successful'))
